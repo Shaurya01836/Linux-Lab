@@ -12,7 +12,7 @@ do
 	x=$((rem*rem*rem))
 	sum=$((sum+x))
 	newNo=$((n/10))
-	n=$newN0
+	n=$newNo
 	i=$((i+1))
 done 
 if [ $sum -eq $original_no ]
