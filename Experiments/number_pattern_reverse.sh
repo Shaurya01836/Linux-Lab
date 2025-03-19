@@ -1,12 +1,11 @@
-echo "enter the number of row"
+echo "Enter the number of rows"
 read Row
-num=1
-for ((i=1 ; i<=Row; i++))
-do 	num=1
-	for (( j=i ; j<=Row; j++ ))
+
+for ((i=1; i<=Row; i++))
+do
+	for ((j=i; j<=Row; j++))
 	do
-		echo -n "$num"
-		num=`expr $num + 1`
+		echo -n "$((j-i+1))"
 	done
-	echo " "
+	echo ""
 done
